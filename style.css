@@ -358,3 +358,10 @@ body {
 .lesson-container iframe {
   margin-bottom: 4rem;
 }
+
+@media screen and (max-width: 1024px) {
+  .lesson-container iframe {
+    width: 350px;
+    height: 200px;
+  }
+}

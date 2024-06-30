@@ -354,3 +354,7 @@ body {
   font-style: italic;
   font-weight: 500;
 }
+
+.lesson-container iframe {
+  margin-bottom: 4rem;
+}

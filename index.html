@@ -243,11 +243,93 @@
         This stages your files for commit. Thus, allowing you to add or remove
         files from your repository before committing.
       </p>
-      <p>To remove files</p>
+      <p>To unstage all added files that you do not want to commit:</p>
+      <div class="code">
+        <p>git reset .</p>
+      </div>
+      <p>To unstage a file that you do not want to commit:</p>
+      <div class="code">
+        <p>git reset path/to/file</p>
+      </div>
+      <p>
+        4. To commit all staged files on your current branch, type "git commit
+        -m "commit message"
+      </p>
+      <div class="code">
+        <p>git commit -m "commit message"</p>
+      </div>
+      <p>
+        5. To work on a new branch to work on a seperate feature of the same
+        project, type "git checkout -b branch-name". "branch-name" can be
+        anything you want.
+      </p>
+      <div class="code">
+        <p>git checkout -b branch-name</p>
+      </div>
+      <p>
+        This will switch the current branch "main" or "master" to your newly
+        created branch. To switch back to the main branch, type "git checkout
+        main"
+      </p>
+      <div class="code">
+        <p>git checkout main</p>
+      </div>
+      <p>
+        6. To merge a branch into the main branch, make sure to checkout to your
+        main branch first with "git checkout main" then type "git merge
+        branch-name"
+      </p>
+      <div class="code">
+        <p>git checkout main</p>
+        <p>git merge branch-name</p>
+      </div>
+      <p>
+        For Guide on remote repository and Github. Check Connecting to Github
+      </p>
+      <p>
+        For more details on basic git commands operation check out Fireship
+        video on Git and Github:
+      </p>
+      <iframe
+        width="800"
+        height="450"
+        src="https://www.youtube.com/embed/HkdAHXoRtos?si=wb0jE7OP_gnFCGNi"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
 
     <div class="lesson-container container" data-lesson="connecting-to-github">
-      <p>Connect to Github</p>
+      <h1 class="lesson-heading">Connecting to Github</h1>
+      <p>
+        1. First you need an account on <a href="https://github.com">Github</a>.
+      </p>
+      <p>
+        2. Once you have an account, you need to configure identity for your
+        git.
+      </p>
+      <p>
+        Your identity in Git is your username and email address which Git uses
+        every time you create a commit. To set up your identity, open Git Bash
+        and use the syntax below:
+      </p>
+      <div class="code">
+        <p>git config --global user.name "[username]"</p>
+      </div>
+      <p>
+        Replace [user_name] with the actual username you will use. If you have a
+        GitHub account, you can use that username and email.
+      </p>
+      <div class="code">
+        <p>git config --global user.email [email]</p>
+      </div>
+      <p>
+        You will be asked to authenticate your GitHub account, so just sign in
+        with the same email to confirm.
+      </p>
+      <h1 class="lesson-heading">More is on the way (WIP...)</h1>
     </div>
   </body>
 </html>

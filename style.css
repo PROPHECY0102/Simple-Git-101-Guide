@@ -342,3 +342,15 @@ body {
     width: 100%;
   }
 }
+
+.code {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  font-family: "Source Code Pro";
+  background-color: #00132f;
+  color: aliceblue;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  font-weight: 500;
+}

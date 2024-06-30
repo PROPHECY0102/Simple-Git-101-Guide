@@ -3,11 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="images/git.png" />
+    <link rel="icon" type="image/png" href="images/profile.jpg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -192,7 +196,54 @@
     </div>
 
     <div class="lesson-container container" data-lesson="basic-git-commands">
-      <p>Basic Git Commands</p>
+      <h1 class="lesson-heading">Basic Git Commands</h1>
+      <p>
+        1. Open your terminal or cmd. To Check if Git is installed type "git -v"
+      </p>
+      <div class="code">
+        <p>git -v</p>
+      </div>
+      <img src="images/git-v.png" alt="" />
+      <p>
+        2. To create a Git repository locally. From your terminal / CMD change
+        directory to your project and type "git init". Alternatively with VSCode
+        you can open console directly into your project directory.
+      </p>
+      <p>To Show Directory (Windows/CMD):</p>
+      <div class="code">
+        <p>dir</p>
+      </div>
+      <p>To Show Directory (MacOS/Linux/Terminal):</p>
+      <div class="code">
+        <p>ls</p>
+      </div>
+      <p>To Change Directory:</p>
+      <div class="code">
+        <p>cd path/to/project-folder</p>
+      </div>
+      <p>
+        To Create Git Repository (Make sure you are at your project folder!!):
+      </p>
+      <div class="code">
+        <p>git init</p>
+      </div>
+      <p>
+        3. Once initialised, you can now add all files from your project folder
+        to your repository by typing "git add ."
+      </p>
+      <p>To Add all files from your project folder to your repository</p>
+      <div class="code">
+        <p>git add .</p>
+      </div>
+      <p>To Add specific file/folder</p>
+      <div class="code">
+        <p>git add path/to/file</p>
+      </div>
+      <p>
+        This stages your files for commit. Thus, allowing you to add or remove
+        files from your repository before committing.
+      </p>
+      <p>To remove files</p>
     </div>
 
     <div class="lesson-container container" data-lesson="connecting-to-github">

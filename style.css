@@ -295,6 +295,12 @@ body {
 }
 
 .tab-button[data-selected] {
+  /* background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 60%,
+    #f1502f 100%
+  ); */
   border-bottom: 3px #f1502f solid;
   color: #f1502f;
 }

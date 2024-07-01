@@ -42,6 +42,7 @@ const socialsbuttons = document.querySelectorAll(".socials-button");
 const socialLink = [
   { id: "twitter", href: "https://twitter.com/Ctrlyourselfpls" },
   { id: "github", href: "https://github.com/PROPHECY0102" },
+  { id: "modifyMe", href: "./modifyMe/" },
 ];
 
 socialsbuttons.forEach((socialButton) => {

@@ -46,6 +46,24 @@
           </svg>
           Scroll Back Top
         </button>
+        <button class="socials-button" id="modifyMe">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 32 32"
+          >
+            <path
+              fill="white"
+              d="M26 28H6a2.003 2.003 0 0 1-2-2V6a2.003 2.003 0 0 1 2-2h10v2H6v20h20V16h2v10a2.003 2.003 0 0 1-2 2"
+            />
+            <path
+              fill="white"
+              d="M20 2v2h6.586L18 12.586L19.414 14L28 5.414V12h2V2z"
+            />
+          </svg>
+          Modify Me
+        </button>
         <button class="socials-button" id="github">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -465,9 +483,46 @@
       </p>
       <p>
         Go to the original repository Github page. You will see a new option to
-        compare and submit a pull request on the top.
+        "compare & pull request" on the top.
       </p>
       <img src="images/compare-pull-request.png" alt="" />
+      <p>
+        Open a pull request. Here you can edit the merge path ie do you want to
+        merge your branch to the main branch. You can give a title your pull
+        request and a description of your pull request.
+      </p>
+      <img src="images/open-a-pull-request.png" alt="" />
+      <p>
+        6. Once you created a pull request. The Maintainers will be notify of
+        your pull request via Github inbox or email notification (if it is
+        enabled).
+      </p>
+      <img src="images/pull-request.png" alt="" />
+      <p>
+        7. When a maintainer accepts your pull request. You will be notified
+        that your changes has been merged into the main branch of the original
+        repository.
+      </p>
+      <img src="images/merge-request-accepted.png" alt="" />
+      <p>
+        8. Synching your forked repository with the original repository and
+        pulling changes from remote repository onto local repository.
+      </p>
+      <p>
+        First you have to sync your forked repository by going to your GitHub of
+        your forked repository and click "Sync Fork" and update repository.
+      </p>
+      <img src="images/sync-button.png" alt="" />
+      <p>
+        Next go back to your IDE. Open your project and the terminal on your
+        project location then to pull changes from the main branch of your
+        remote repository onto your local repository. Type:
+      </p>
+      <div class="code">
+        <p>git checkout main</p>
+        <p>git pull origin main</p>
+      </div>
+      <img src="images/sync-remote.png" alt="" />
     </div>
   </body>
 </html>

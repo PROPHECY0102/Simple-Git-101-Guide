@@ -76,6 +76,17 @@ body {
   position: relative;
 }
 
+.container {
+  margin-block: 4rem;
+  padding-inline: 24rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-inline: 2rem;
+  }
+}
+
 .profile-container {
   position: fixed;
   top: 0.5rem;
@@ -148,22 +159,20 @@ body {
   width: 1.5rem;
 }
 
-.container {
-  margin-block: 4rem;
-  padding-inline: 24rem;
-}
-
-@media screen and (max-width: 1024px) {
-  .container {
-    padding-inline: 2rem;
-  }
-}
-
 .heading-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-bottom: 4rem;
+  padding-top: 4rem;
+  padding-inline: 24rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .heading-container {
+    padding-inline: 2rem;
+  }
 }
 
 .center-text {
@@ -361,7 +370,7 @@ body {
 
 @media screen and (max-width: 1024px) {
   .lesson-container iframe {
-    width: 350px;
+    width: 330px;
     height: 200px;
   }
 }

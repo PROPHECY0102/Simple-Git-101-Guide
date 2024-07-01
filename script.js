@@ -85,3 +85,13 @@ tabButtons.forEach((tabButton) => {
     tabButton.setAttribute("data-selected", "");
   });
 });
+
+document.body.addEventListener("click", (event) => {
+  if (
+    !event.target.closest(".profile-popup") &&
+    !event.target.closest(".profile-button")
+  ) {
+    const profilePopup = document.querySelector(".profile-popup");
+    profilePopup.removeAttribute("data-show");
+  }
+});

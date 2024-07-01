@@ -95,3 +95,13 @@ document.body.addEventListener("click", (event) => {
     profilePopup.removeAttribute("data-show");
   }
 });
+
+const scrollButton = document.querySelector("#scroll");
+
+scrollButton.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+    block: "start",
+  });
+});

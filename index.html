@@ -28,6 +28,24 @@
     <div class="profile-popup">
       <p>Made By PROPHECY</p>
       <div class="socials-container">
+        <button class="socials-button" id="scroll">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="none"
+              stroke="white"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 5v14m6-8l-6-6m-6 6l6-6"
+            />
+          </svg>
+          Scroll Back Top
+        </button>
         <button class="socials-button" id="github">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -329,7 +347,127 @@
         You will be asked to authenticate your GitHub account, so just sign in
         with the same email to confirm.
       </p>
-      <h1 class="lesson-heading">Modify by LilProphecy</h1>
+      <h1 class="lesson-heading">Initialise a new Github Repository</h1>
+      <p>
+        1. Create a new repository by clicking "new" on your Github
+        dashboard/landing page after signing in.
+      </p>
+      <img src="images/github-new.png" alt="" />
+      <p>
+        2. Give a name and description to your repository. It is recommended
+        that you avoid having spaces in your repository name.
+      </p>
+      <img src="images/initialise-repo-remote.png" alt="" />
+      <p>
+        3. Once your repository is created, you will be redirected to your newly
+        created repository that is currently empty. Here you can add a remote
+        origin and push your project local repository directly to this
+        repository.
+      </p>
+      <img src="images/just-add-origin-and-push.png" alt="" />
+      <p>
+        Copy the given code from your newly created repository following the
+        image above, then navigate to your terminal of your project folder.
+      </p>
+      <p>
+        Code for adding remote origin and uploading (pushing) your local project
+        files to remote repository (Replace [url] with the URL of your Github
+        repository):
+      </p>
+      <div class="code">
+        <p>git remote add origin [url]</p>
+        <p>git branch -M main</p>
+        <p>git push -u origin main</p>
+      </div>
+      <p>Output:</p>
+      <img src="images/add-origin-and-push.png" alt="" />
+      <p>
+        Now that you have created and push your project onto the newly created
+        repository. You can refresh the page and you will see your project files
+        on your repository.
+      </p>
+      <img src="images/my-first-repo.png" alt="" />
+      <p>
+        4. Developing and Modifying your project and pushing new changes to your
+        remote repository.
+      </p>
+      <p>
+        To Stage your file, commit and push to remote repository (Replace
+        "commit-message" with your own commit message):
+      </p>
+      <div class="code">
+        <p>git add .</p>
+        <p>git commit -m "commit-message"</p>
+        <p>git push add origin</p>
+      </div>
+      <p>Output:</p>
+      <img src="images/push-new-changes.png" alt="" />
+      <h1 class="lesson-heading">Working on another user's repository</h1>
+      <h1 class="lesson-heading">Forking and Cloning</h1>
+      <p>
+        1. Go to another repository that you do not own. For example you can go
+        to
+        <a href="https://github.com/PROPHECY0102/Simple-Git-101-Guide"
+          >Simple-Git-101-Guide</a
+        >. Which is the Github repository for this very website.
+      </p>
+      <p>
+        2. Once you find the repository you want to contribute and work on. You
+        can click fork to fork their repository onto your account.
+      </p>
+      <img src="images/fork-button.png" alt="" />
+      <p>
+        You can change or leave it with the same name of the repository your
+        forking from.
+      </p>
+      <img src="images/fork-project-config.png" alt="" />
+      <p>
+        3. Now you can clone your own forked repository to work on it locally.
+      </p>
+      <img src="images/clone-http-link.png" alt="" />
+      <p>
+        Navigate to a new empty folder and open your IDE in that folder. Launch
+        the terminal and type:
+      </p>
+      <p>
+        Replace [url] with the url you have copied on your forked repository.
+      </p>
+      <div class="code">
+        <p>git clone [url]</p>
+      </div>
+      <img src="images/git-clone-command.png" alt="" />
+      <p>
+        4. Working on your forked repository. IMPOPRTANT: Remember to always
+        work from a seperate branch when working on a forked repository. This
+        will make the merge process smoother.
+      </p>
+      <div class="code">
+        <p>git checkout -b branch-name</p>
+      </div>
+      <img src="images/branch-on-fork.png" alt="" />
+      <p>
+        Once you are done contributing to the project via your forked repository
+        on a seperate branch. You can add the files, commit and push that branch
+        onto your forked repository.
+      </p>
+      <div class="code">
+        <p>git add .</p>
+        <p>git commit -m "commit-message"</p>
+        <p>git push origin branch-name</p>
+      </div>
+      <img src="images/git-push-command.png" alt="" />
+      <p>
+        5. Submitting a pull request on the original repository that you have
+        forked from. A pull request is basically a request to merge your
+        contribution/changes onto the real repository. Pull requests needs to be
+        review by a maintainer of the original repository before they can decide
+        to merge your changes onto the source code.
+      </p>
+      <p>
+        Go to the original repository Github page. You will see a new option to
+        compare and submit a pull request on the top.
+      </p>
+      <img src="images/compare-pull-request.png" alt="" />
     </div>
   </body>
 </html>

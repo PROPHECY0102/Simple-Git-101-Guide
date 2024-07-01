@@ -106,7 +106,6 @@ body {
 
 .profile-button:hover {
   background-color: rgb(61, 61, 61);
-  color: aliceblue;
 }
 
 .profile-button img {
@@ -153,6 +152,10 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.socials-button:hover {
+  background-color: rgb(61, 61, 61);
 }
 
 .socials-container button img {
